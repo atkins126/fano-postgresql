@@ -1,1 +1,13 @@
-{ "appName" : "MyApp" }
+{
+    "appName" : "MyApp",
+    "baseUrl" : "http://postgresql.fano",
+    "db" : {
+        "postgresql" : {
+            "host" : "localhost",
+            "port" : 5432,
+            "username" : "fanopsql",
+            "password" : "fanopsql",
+            "database" : "fanopsql"
+        }
+    }
+}

@@ -9,3 +9,14 @@
 {%dependencies.inc}
 
 {---put your dependencies registration here---}
+container.add('tplParser', TTemplateParserfactory.create());
+
+container.add(
+    'baseTemplate',
+    TStrViewPartialFactory.create(
+        container['tplParser'] as ITemplateParser,
+        getCurrentDir() + '/resources/Templates/base.template.html'
+    )
+);
+
+container.add('userListView', TUserListingViewFactory.create());

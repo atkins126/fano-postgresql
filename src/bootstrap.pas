@@ -39,7 +39,10 @@ uses
     (*! -------------------------------
      *   controllers factory
      *----------------------------------- *)
-    {---- put your controller factory here ---};
+    {---- put your controller factory here ---},
+    UserControllerFactory,
+    UserModelFactory,
+    UserListingViewFactory;
 
 
 
@@ -56,7 +59,10 @@ uses
     end;
 
     procedure TAppServiceProvider.register(const container : IDependencyContainer);
+    var
+        config : IAppConfiguration;
     begin
+        config := container['config'] as IAppConfiguration;
         {$INCLUDE Dependencies/dependencies.inc}
     end;
 
