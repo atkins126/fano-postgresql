@@ -37,7 +37,7 @@ Please read [Deploy as SCGI application](https://doc.fano.web.id/deployment/scgi
 
 If you do not have Fano CLI installed, you need to setup virtual host manually as shown in *Run with a Web Server* section of this document.
 
-After you setup virtual host, run application binary
+After you setup virtual host and database, run application binary
 
 ```
 $ ./bin/app.cgi
