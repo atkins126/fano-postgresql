@@ -31,7 +31,7 @@ $ sudo fanocli --deploy-scgi=postgresql.fano
 If you use nginx, add `--web-server=nginx`
 
 ```
-$ sudo fanocli --deploy-scgi=pdf.fano --web-server=nginx
+$ sudo fanocli --deploy-scgi=postgresql.fano --web-server=nginx
 ```
 Please read [Deploy as SCGI application](https://doc.fano.web.id/deployment/scgi/) Fano Framework documentation for more information.
 
